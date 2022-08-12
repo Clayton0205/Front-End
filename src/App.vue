@@ -1,7 +1,7 @@
 <template>
 
   <nav id="nav">
-      <div class="container" id="navblurr">
+    <div class="container" id="navblurr">
       <div class="row">
         <div class="col" id="home">
           <router-link to="/">
@@ -21,19 +21,19 @@
         </div>
         <div class="col" id="adminbox1">
           <i class="bi bi-journal-bookmark"></i>
-
           <router-link to="/admin">Register</router-link>
         </div>
         <div class="col" id="adminbox2">
           <i class="bi bi-person"></i>
-
           <router-link to="/admin">Login</router-link>
+        </div>
+        <div class="col" id="adminbox3">
+          <i class="bi bi-cart"></i>
+          <router-link to="/cart">Cart</router-link>
         </div>
       </div>
     </div>
-    
   </nav>
-
   <router-view />
 </template>
 
@@ -57,10 +57,10 @@
   color: white;
 
   background: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url(./assets/aesthetic-pink.jpg);
-    width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./assets/aesthetic-pink.jpg);
+  width: 100%;
 }
 
 a {
@@ -92,26 +92,26 @@ a {
   width: 65px;
   height: 70px;
 }
-#home{
+
+#home {
   padding-right: 200px;
 }
 
-#products{
+#products {
   padding-right: 500px;
 }
 
-#navblurr{
- background: rgba(255, 255, 255, 0);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(20px);
--webkit-backdrop-filter: blur(20px);
+#navblurr {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
-P{
-   /* From https://css.glass */
+P {
+  /* From https://css.glass */
 
 }
-
 </style>
 

@@ -2,7 +2,7 @@
     <div id="page">
         <div id="blurr">
             <div id="title">
-                <h1 id="HomeTitle">The Stan-Dom</h1>
+                <h1 id="HomeTitle">Home of Stans</h1>
             </div>
             <div id="pic">
                 <img src="../assets/de268hn-0a55c704-06de-4ae7-ab7f-4d87a1dd093e.png" id="crown">
