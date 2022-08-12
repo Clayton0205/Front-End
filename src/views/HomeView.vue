@@ -2,7 +2,10 @@
     <div id="page">
         <div id="blurr">
             <div id="title">
-                <h1 id="HomeTitle">Home of Stans</h1>
+                <strong>
+                    <h1 id="HomeTitle">Home of Stans</h1>
+                </strong>
+                <br>
             </div>
             <div id="pic">
                 <img src="../assets/de268hn-0a55c704-06de-4ae7-ab7f-4d87a1dd093e.png" id="crown">
@@ -50,12 +53,17 @@
     height: 100%;
 }
 
-#HomeTitle{
+#HomeTitle {
     padding-top: 20px;
-    /* font-family: 'Roboto', sans-serif; */
     color: #fb93ac;
-    font-family: Gabriola;
-    font-size:  50px;
+    /* font-size:  50px; */
+    font-family: 'Cinzel', serif;
+}
+
+#slogan {
+    padding-top: 20px;
+    color: #fb93ac;
+    /* font-size:  50px; */
     font-family: 'Cinzel', serif;
 }
 </style>

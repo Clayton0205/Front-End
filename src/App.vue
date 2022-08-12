@@ -1,7 +1,7 @@
 <template>
 
   <nav id="nav">
-    <div class="container" id="navblurr">
+    <div class="container-fluid" id="navblurr">
       <div class="row">
         <div class="col" id="home">
           <router-link to="/">
@@ -10,26 +10,35 @@
         </div>
         <div class="col" id="about">
           <router-link to="/about">
-            <p>About</p>
+            <strong>
+              <p>About</p>
+            </strong>
           </router-link>
         </div>
-        |
         <div class="col" id="products">
           <router-link to="/products">
-            <p>Products</p>
+            <strong>
+              <p>Products</p>
+            </strong>
           </router-link>
         </div>
         <div class="col" id="adminbox1">
-          <i class="bi bi-journal-bookmark"></i>
-          <router-link to="/admin">Register</router-link>
+          <router-link to="/admin"><i class="bi bi-journal"></i>
+            <br>
+            Register
+          </router-link>
         </div>
         <div class="col" id="adminbox2">
-          <i class="bi bi-person"></i>
-          <router-link to="/admin">Login</router-link>
+          <router-link to="/admin"><i class="bi bi-cart"></i>
+            <br>
+            Login
+          </router-link>
         </div>
         <div class="col" id="adminbox3">
-          <i class="bi bi-cart"></i>
-          <router-link to="/cart">Cart</router-link>
+          <router-link to="/cart"><i class="bi bi-person"></i>
+            <br>
+            Cart
+          </router-link>
         </div>
       </div>
     </div>
@@ -67,7 +76,7 @@ a {
   text-decoration: none;
   font-family: NSimSun;
   font-size: 20px;
-  font-family: Comic Sans MS;
+  font-family: 'Cinzel', serif;
   color: #fb93ac;
 }
 
@@ -112,6 +121,33 @@ a {
 P {
   /* From https://css.glass */
 
+}
+
+#adminbox1 {
+  display: flex;
+  justify-content: center;
+  margin-right: 5rem;
+}
+
+#adminbox2 {
+  display: flex;
+  justify-content: center;
+  margin-right: 5rem;
+}
+
+#adminbox3 {
+  display: flex;
+  justify-content: center;
+}
+
+#about {
+  margin-top: 10px;
+  margin-right: 150px;
+}
+
+#products {
+  margin-top: 10px;
+  margin-right: 40px;
 }
 </style>
 
