@@ -3,7 +3,7 @@
         <div id="blurr">
             <div id="title">
                 <strong>
-                    <h1 id="HomeTitle">Home of Stans</h1>
+                    <h1 id="HomeTitle">House of Stans</h1>
                 </strong>
                 <br>
             </div>

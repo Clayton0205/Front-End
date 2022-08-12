@@ -1,5 +1,4 @@
 <template>
-
   <nav id="nav">
     <div class="container-fluid" id="navblurr">
       <div class="row">
@@ -29,13 +28,13 @@
           </router-link>
         </div>
         <div class="col" id="adminbox2">
-          <router-link to="/admin"><i class="bi bi-cart"></i>
+          <router-link to="/cart"><i class="bi bi-person"></i>
             <br>
             Login
           </router-link>
         </div>
         <div class="col" id="adminbox3">
-          <router-link to="/cart"><i class="bi bi-person"></i>
+          <router-link to="/admin"><i class="bi bi-cart"></i>
             <br>
             Cart
           </router-link>
@@ -51,6 +50,9 @@
   margin: 0;
   padding: 0;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 #page {
   font-size: 10px;
@@ -64,7 +66,6 @@
   text-align: center;
   /* background-color: #1e1328; */
   color: white;
-
   background: no-repeat;
   background-size: cover;
   background-position: center;
