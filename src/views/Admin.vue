@@ -1,6 +1,11 @@
 <template>
     <div id="page">
-        <Footer />
+        <div class="container" id="register">
+          <form action="">
+            
+          </form>
+        </div>
+        <div class="container"></div>
     </div>
 </template>
 

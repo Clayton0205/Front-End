@@ -1,6 +1,6 @@
 <template>
     <div id="page">
-        I like Guys
+        
     </div>
 </template>
 

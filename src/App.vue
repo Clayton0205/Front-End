@@ -28,13 +28,13 @@
           </router-link>
         </div>
         <div class="col" id="adminbox2">
-          <router-link to="/cart"><i class="bi bi-person"></i>
+          <router-link to="/admin"><i class="bi bi-cart"></i>
             <br>
             Login
           </router-link>
         </div>
         <div class="col" id="adminbox3">
-          <router-link to="/admin"><i class="bi bi-cart"></i>
+          <router-link to="/cart"><i class="bi bi-person"></i>
             <br>
             Cart
           </router-link>
@@ -43,6 +43,9 @@
     </div>
   </nav>
   <router-view />
+  <footer id="footer">
+    <router-link to="/contact">Click on me if you want to contact us</router-link>
+  </footer>
 </template>
 
 <style scoped>
@@ -50,7 +53,9 @@
   margin: 0;
   padding: 0;
 }
-html, body {
+
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -149,6 +154,17 @@ P {
 #products {
   margin-top: 10px;
   margin-right: 40px;
+}
+
+#footer {
+  padding-top: 10px;
+  text-align: center;
+  height: 55px;
+  background: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./assets/aesthetic-pink.jpg);
+  width: 100%;
 }
 </style>
 
