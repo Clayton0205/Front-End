@@ -15,5 +15,7 @@
     background-color: #7d1b56;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
+    width: 1519px;
 }
 </style>

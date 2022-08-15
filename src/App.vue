@@ -75,7 +75,7 @@ body {
   background-size: cover;
   background-position: center;
   background-image: url(./assets/aesthetic-pink.jpg);
-  width: 100%;
+  width: 1519px;
 }
 
 a {
