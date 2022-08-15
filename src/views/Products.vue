@@ -1,18 +1,23 @@
 <template>
     <div id="page">
         <div v-if="products">
-            <div class="container-fluid">
-                <div v-for="product in products" :key="product" id="box">
-                    <div class="row">
-                        <h3>{{ product.title }}</h3>
-                        <img :src="product.image" id="image">
-                        <br>
-                        <p>{{ product.description }}</p>
-                        <p>R{{ product.price }}</p>
+            <router-link to="/about">
+                <div class="container-fluid">
+                    <div v-for="product in products" :key="product" id="box">
+                        <div class="row">
+                            <div id="title">
+                                <h3>{{ product.title }}</h3>
+                            </div>
+                            <img :src="product.image" id="image">
+                            <br>
+                            <div id="desc">
+                                <p>{{ product.description }}</p>
+                            </div>
+                            <p id="price">R{{ product.price }}</p>
+                        </div>
                     </div>
-
                 </div>
-            </div>
+            </router-link>
         </div>
         <div v-else id="else">
             <h1>Mental Breakdown</h1>
@@ -61,7 +66,7 @@ export default {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 500px;
-    height: 580px;
+    height: 650px;
     border: 1px solid black;
     text-align: center;
 }
@@ -73,7 +78,27 @@ export default {
     height: 400px;
 }
 
-#else{
+#else {
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fb93ac;
+}
+
+#title {
+    text-decoration: underline;
+    height: 70px;
+}
+
+#desc{
+    height: 100px;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+#price{
+    font-size: 30px;
 }
 </style>

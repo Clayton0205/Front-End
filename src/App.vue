@@ -7,13 +7,6 @@
             <img src="./assets/de268hn-0a55c704-06de-4ae7-ab7f-4d87a1dd093e.png" id="crown">
           </router-link>
         </div>
-        <div class="col" id="about">
-          <router-link to="/about">
-            <strong>
-              <p>About</p>
-            </strong>
-          </router-link>
-        </div>
         <div class="col" id="products">
           <router-link to="/products">
             <strong>
@@ -144,11 +137,6 @@ P {
 #adminbox3 {
   display: flex;
   justify-content: center;
-}
-
-#about {
-  margin-top: 10px;
-  margin-right: 150px;
 }
 
 #products {
