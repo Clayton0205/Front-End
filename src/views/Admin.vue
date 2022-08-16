@@ -4,7 +4,7 @@
         <div class="container" id="register">
             <h1>Don't have an acount? <br> Register here!!</h1>
             <br>
-            <form @submit="register" method="POST">
+            <form>
                 <div class="card" id="card">
                     <div class="row">
                         <label for="Fullname">Fullname</label>
@@ -34,7 +34,7 @@
                         <input type="date" id="join" placeholder="Join Date" v-model="join_date">
                     </div>
                     <div class="row">
-                        <button type="submit" @click="userRegister()" id="register">Register</button>
+                        <button type="button" @click="userRegister" id="register">Register</button>
                     </div>
                 </div>
             </form>
