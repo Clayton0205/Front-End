@@ -1,7 +1,6 @@
 <template>
     <div id="page">
         <div v-if="products">
-<<<<<<< HEAD
             <router-link to="/">
                 <div class="container-fluid">
                     <div v-for="product in products" :key="product" id="box">
@@ -14,7 +13,10 @@
                             <p id="products">{{ product.description }}</p>
                         </div>
                         <div class="row">
-=======
+                              </div>
+                           </div>
+                             </div>
+            </router-link>
             <router-link to="/about">
                 <div class="container-fluid">
                     <div v-for="product in products" :key="product" id="box">
@@ -27,21 +29,19 @@
                             <div id="desc">
                                 <p>{{ product.description }}</p>
                             </div>
->>>>>>> 7f7881bc146047b3e96a4412c34ec6e4a77f6434
                             <p id="price">R{{ product.price }}</p>
                         </div>
                     </div>
                 </div>
             </router-link>
-<<<<<<< HEAD
-
-=======
->>>>>>> 7f7881bc146047b3e96a4412c34ec6e4a77f6434
         </div>
         <div v-else id="else">
             <h1>Mental Breakdown</h1>
         </div>
     </div>
+  
+
+  
 </template>
 
 <script>
@@ -75,7 +75,7 @@ export default {
     color: #fb93ac;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(255, 111, 135);
 }
@@ -91,14 +91,11 @@ a{
     margin: auto;
     margin-top: 10px;
     width: 500px;
-<<<<<<< HEAD
     height: 740px;
     border: 1px solid;
     border-radius: 10px;
-=======
-    height: 650px;
+   height: 650px;
     border: 1px solid black;
->>>>>>> 7f7881bc146047b3e96a4412c34ec6e4a77f6434
     text-align: center;
 }
 
@@ -114,7 +111,6 @@ a{
     height: 400px;
 }
 
-<<<<<<< HEAD
 #products {
     height: 150px;
     font-size: 13px;
@@ -124,8 +120,6 @@ a{
     font-size: 80px;
 }
 
-=======
->>>>>>> 7f7881bc146047b3e96a4412c34ec6e4a77f6434
 #else {
     text-align: center;
 }
@@ -140,13 +134,13 @@ a {
     height: 70px;
 }
 
-#desc{
+#desc {
     height: 100px;
     font-size: 11px;
     margin-bottom: 20px;
 }
 
-#price{
+#price {
     font-size: 30px;
 }
 </style>
