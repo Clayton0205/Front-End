@@ -29,6 +29,7 @@
     width: 1519px;
     height: 705px;
     overflow: hidden;
+    color: #fb93ac;
 }
 
 #pic {

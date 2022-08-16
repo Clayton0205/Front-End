@@ -1,18 +1,24 @@
 <template>
     <div id="page">
         <div v-if="products">
-            <div class="container-fluid">
-                <div v-for="product in products" :key="product" id="box">
-                    <div class="row">
-                        <h3>{{ product.title }}</h3>
+            <router-link to="/">
+                <div class="container-fluid">
+                    <div v-for="product in products" :key="product" id="box">
+                        <div class="row">
+                            <h3 id="title">{{ product.title }}</h3>
+                        </div>
+                        <div class="row"></div>
                         <img :src="product.image" id="image">
-                        <br>
-                        <p>{{ product.description }}</p>
-                        <p>R{{ product.price }}</p>
+                        <div class="row">
+                            <p id="products">{{ product.description }}</p>
+                        </div>
+                        <div class="row">
+                            <p id="price">R{{ product.price }}</p>
+                        </div>
                     </div>
-
                 </div>
-            </div>
+            </router-link>
+
         </div>
         <div v-else id="else">
             <h1>Mental Breakdown</h1>
@@ -47,6 +53,13 @@ export default {
     width: 100vw;
     overflow: hidden;
     width: 1519px;
+    font-family: 'Cinzel', serif;
+    color: #fb93ac;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 111, 135);
 }
 
 .container-fluid {
@@ -58,12 +71,17 @@ export default {
 #box {
     background-color: white;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
     width: 500px;
-    height: 580px;
-    border: 1px solid black;
+    height: 740px;
+    border: 1px solid;
+    border-radius: 10px;
     text-align: center;
+}
+
+#title {
+    text-decoration: underline;
+    height: 70px;
 }
 
 #image {
@@ -73,7 +91,16 @@ export default {
     height: 400px;
 }
 
-#else{
+#products {
+    height: 150px;
+    font-size: 13px;
+}
+
+#price {
+    font-size: 80px;
+}
+
+#else {
     text-align: center;
 }
 </style>
