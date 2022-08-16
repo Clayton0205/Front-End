@@ -1,6 +1,7 @@
 <template>
     <div id="page">
         <div v-if="products">
+<<<<<<< HEAD
             <router-link to="/">
                 <div class="container-fluid">
                     <div v-for="product in products" :key="product" id="box">
@@ -13,12 +14,29 @@
                             <p id="products">{{ product.description }}</p>
                         </div>
                         <div class="row">
+=======
+            <router-link to="/about">
+                <div class="container-fluid">
+                    <div v-for="product in products" :key="product" id="box">
+                        <div class="row">
+                            <div id="title">
+                                <h3>{{ product.title }}</h3>
+                            </div>
+                            <img :src="product.image" id="image">
+                            <br>
+                            <div id="desc">
+                                <p>{{ product.description }}</p>
+                            </div>
+>>>>>>> 7f7881bc146047b3e96a4412c34ec6e4a77f6434
                             <p id="price">R{{ product.price }}</p>
                         </div>
                     </div>
                 </div>
             </router-link>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7f7881bc146047b3e96a4412c34ec6e4a77f6434
         </div>
         <div v-else id="else">
             <h1>Mental Breakdown</h1>
@@ -73,9 +91,14 @@ a{
     margin: auto;
     margin-top: 10px;
     width: 500px;
+<<<<<<< HEAD
     height: 740px;
     border: 1px solid;
     border-radius: 10px;
+=======
+    height: 650px;
+    border: 1px solid black;
+>>>>>>> 7f7881bc146047b3e96a4412c34ec6e4a77f6434
     text-align: center;
 }
 
@@ -91,6 +114,7 @@ a{
     height: 400px;
 }
 
+<<<<<<< HEAD
 #products {
     height: 150px;
     font-size: 13px;
@@ -100,7 +124,29 @@ a{
     font-size: 80px;
 }
 
+=======
+>>>>>>> 7f7881bc146047b3e96a4412c34ec6e4a77f6434
 #else {
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fb93ac;
+}
+
+#title {
+    text-decoration: underline;
+    height: 70px;
+}
+
+#desc{
+    height: 100px;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+#price{
+    font-size: 30px;
 }
 </style>
